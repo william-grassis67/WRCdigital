@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WRC Digital - Transformamos ideias em soluções digitais. Criação de sites, landing pages, lojas virtuais e sistemas personalizados.">
+    <title>WRC Digital | Soluções Digitais Profissionais</title>
+
+    <!-- Fontes Google (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN Oficial -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Fixo -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#inicio" class="logo">
+                WRC<span>Digital</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link active">Início</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#beneficios" class="nav-link">Por que WRC?</a></li>
+                    <li><a href="#como-funciona" class="nav-link">Como Funciona</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#contato" class="btn btn-primary btn-sm">
+                    Solicitar orçamento <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <button class="hamburger" id="hamburger-btn" aria-label="Abrir menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Hero -->
+        <section class="hero" id="inicio">
+            <div class="container hero-container">
+                <div class="hero-content animate-on-scroll">
+                    <span class="badge">Desenvolvimento Web & Software</span>
+                    <h1 class="hero-title">Transformamos ideias em <span>soluções digitais.</span></h1>
+                    <p class="hero-description">
+                        Criamos sites modernos, rápidos e personalizados para ajudar sua empresa a ter uma presença profissional na internet.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#contato" class="btn btn-primary btn-lg">
+                            Solicitar orçamento <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#servicos" class="btn btn-secondary btn-lg">
+                            Conhecer serviços
+                        </a>
+                    </div>
+
+                    <div class="hero-benefits">
+                        <div class="benefit-item">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Site responsivo</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Design profissional</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Atendimento personalizado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual animate-on-scroll">
+                    <div class="tech-card-wrapper">
+                        <div class="tech-card">
+                            <div class="card-header">
+                                <div class="dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <span class="card-title">WRC_Engine.js</span>
+                            </div>
+                            <div class="code-body">
+                                <p><span class="code-keyword">const</span> <span class="code-var">wrcDigital</span> = {</p>
+                                <p class="indent-1"><span class="code-prop">foco</span>: <span class="code-string">'Resultados & Performance'</span>,</p>
+                                <p class="indent-1"><span class="code-prop">tecnologia</span>: [<span class="code-string">'HTML5'</span>, <span class="code-string">'CSS3'</span>, <span class="code-string">'JS'</span>, <span class="code-string">'Sistemas'</span>],</p>
+                                <p class="indent-1"><span class="code-prop">missao</span>: <span class="code-string">'Escalar negócios na web'</span></p>
+                                <p>};</p>
+                                <br>
+                                <p><span class="code-keyword">function</span> <span class="code-func">criarSolucao</span>(<span class="code-param">cliente</span>) {</p>
+                                <p class="indent-1"><span class="code-keyword">return</span> <span class="code-string">`Sucesso garantido para ${cliente.nome}`</span>;</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="floating-badge badge-1">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <div>
+                                <h4>Projetos Sob Medida</h4>
+                                <p>100% Personalizados</p>
+                            </div>
+                        </div>
+
+                        <div class="floating-badge badge-2">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <div>
+                                <h4>Suporte Rápido</h4>
+                                <p>Direto no WhatsApp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Serviços -->
+        <section class="servicos section" id="servicos">
+            <div class="container">
+                <div class="section-header text-center animate-on-scroll">
+                    <span class="section-subtitle">O que fazemos</span>
+                    <h2 class="section-title">Nossos Serviços</h2>
+                    <p class="section-description">Soluções digitais completas desenvolvidas para otimizar a presença da sua empresa no mercado.</p>
+                </div>
+
+                <div class="servicos-grid">
+                    <div class="card-servico animate-on-scroll">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <h3>Sites profissionais</h3>
+                        <p>Sites modernos e personalizados para apresentar sua empresa e seus serviços.</p>
+                    </div>
+
+                    <div class="card-servico animate-on-scroll">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <h3>Landing pages</h3>
+                        <p>Páginas criadas para divulgar serviços, campanhas e gerar contatos.</p>
+                    </div>
+
+                    <div class="card-servico animate-on-scroll">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <h3>Lojas virtuais</h3>
+                        <p>Lojas digitais para apresentar produtos e facilitar vendas.</p>
+                    </div>
+
+                    <div class="card-servico animate-on-scroll">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3>Sistemas personalizados</h3>
+                        <p>Soluções desenvolvidas de acordo com as necessidades do seu negócio.</p>
+                    </div>
+
+                    <div class="card-servico animate-on-scroll">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <h3>Manutenção e melhorias</h3>
+                        <p>Atualizações, correções e melhorias para seu site.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Benefícios -->
+        <section class="beneficios section dark-bg" id="beneficios">
+            <div class="container">
+                <div class="beneficios-wrapper">
+                    <div class="beneficios-content animate-on-scroll">
+                        <span class="section-subtitle">Vantagens estratégicas</span>
+                        <h2 class="section-title text-white">Por que sua empresa precisa de uma presença digital?</h2>
+                        <p class="text-light">
+                            Estar no ambiente digital de forma profissional garante que sua marca seja encontrada pelas pessoas certas, na hora certa.
+                        </p>
+
+                        <ul class="beneficios-list">
+                            <li>
+                                <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+                                <div>
+                                    <h4>Mais credibilidade</h4>
+                                    <p>Sua empresa transmite confiança ao passar uma imagem sólida na internet.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+                                <div>
+                                    <h4>Empresa disponível 24 horas</h4>
+                                    <p>Seus potenciais clientes podem conhecer seus serviços a qualquer hora do dia.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+                                <div>
+                                    <h4>Melhor apresentação dos serviços</h4>
+                                    <p>Organize suas informações de forma clara, atrativa e objetiva.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+                                <div>
+                                    <h4>Contato rápido pelo WhatsApp</h4>
+                                    <p>Facilite a ponte entre o interesse do cliente e o seu atendimento.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+                                <div>
+                                    <h4>Experiência adaptada para celulares</h4>
+                                    <p>Visualização perfeita em smartphones, tablets e computadores.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+                                <div>
+                                    <h4>Presença profissional na internet</h4>
+                                    <p>Destaque-se da concorrência com um visual único e exclusivo.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="beneficios-stats animate-on-scroll">
+                        <div class="stat-card">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <h3>100%</h3>
+                            <p>Mobile First & Responsivo</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fa-solid fa-bolt"></i>
+                            <h3>Rápido</h3>
+                            <p>Carregamento Otimizado</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <h3>Seguro</h3>
+                            <p>Código Limpo e Moderno</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Como Funciona -->
+        <section class="como-funciona section" id="como-funciona">
+            <div class="container">
+                <div class="section-header text-center animate-on-scroll">
+                    <span class="section-subtitle">Passo a passo</span>
+                    <h2 class="section-title">Como Funciona</h2>
+                    <p class="section-description">Entenda nosso processo de trabalho transparente e direcionado a resultados.</p>
+                </div>
+
+                <div class="etapas-grid">
+                    <div class="etapa-item animate-on-scroll">
+                        <div class="etapa-number">01</div>
+                        <div class="etapa-icon">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <h3>Entre em contato</h3>
+                        <p>Conte sobre sua empresa e seu projeto inicial.</p>
+                    </div>
+
+                    <div class="etapa-item animate-on-scroll">
+                        <div class="etapa-number">02</div>
+                        <div class="etapa-icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h3>Entendemos sua necessidade</h3>
+                        <p>Analisamos seus objetivos e o que será necessário para alcançar o sucesso.</p>
+                    </div>
+
+                    <div class="etapa-item animate-on-scroll">
+                        <div class="etapa-number">03</div>
+                        <div class="etapa-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3>Criamos a solução</h3>
+                        <p>Desenvolvemos um projeto moderno, intuitivo e totalmente personalizado.</p>
+                    </div>
+
+                    <div class="etapa-item animate-on-scroll">
+                        <div class="etapa-number">04</div>
+                        <div class="etapa-icon">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <h3>Seu projeto ganha vida</h3>
+                        <p>Entregamos uma solução pronta para representar sua empresa na web.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section class="sobre section light-bg" id="sobre">
+            <div class="container">
+                <div class="sobre-wrapper">
+                    <div class="sobre-content animate-on-scroll">
+                        <span class="section-subtitle">Sobre a WRC Digital</span>
+                        <h2 class="section-title">Tecnologia criada para ajudar empresas.</h2>
+                        <p class="sobre-text">
+                            A WRC Digital desenvolve sites e soluções digitais modernas, unindo tecnologia, criatividade e qualidade para ajudar empresas a construírem uma presença profissional na internet.
+                        </p>
+                        
+                        <div class="valores-grid">
+                            <div class="valor-card">
+                                <i class="fa-solid fa-handshake"></i>
+                                <h4>Compromisso</h4>
+                            </div>
+                            <div class="valor-card">
+                                <i class="fa-solid fa-award"></i>
+                                <h4>Qualidade</h4>
+                            </div>
+                            <div class="valor-card">
+                                <i class="fa-solid fa-microchip"></i>
+                                <h4>Inovação</h4>
+                            </div>
+                            <div class="valor-card">
+                                <i class="fa-solid fa-eye"></i>
+                                <h4>Transparência</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section class="projetos section" id="projetos">
+            <div class="container">
+                <div class="section-header text-center animate-on-scroll">
+                    <span class="section-subtitle">Portfólio</span>
+                    <h2 class="section-title">Projetos em Destaque</h2>
+                    <p class="section-description">Confira alguns exemplos do padrão de qualidade que entregamos para nossos clientes.</p>
+                </div>
+
+                <div class="projetos-grid">
+                    <div class="projeto-card animate-on-scroll">
+                        <div class="projeto-img">
+                            <i class="fa-solid fa-building-user"></i>
+                        </div>
+                        <div class="projeto-info">
+                            <span class="projeto-tag">Site Profissional</span>
+                            <h3>Apex Consultoria</h3>
+                            <p>Website corporativo elegante focado na apresentação de serviços e captação de leads.</p>
+                            <a href="#contato" class="btn-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="projeto-card animate-on-scroll">
+                        <div class="projeto-img">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+                        <div class="projeto-info">
+                            <span class="projeto-tag">Loja Virtual</span>
+                            <h3>Elegance Modas</h3>
+                            <p>E-commerce responsivo com catálogo interativo e direcionamento para vendas via WhatsApp.</p>
+                            <a href="#contato" class="btn-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="projeto-card animate-on-scroll">
+                        <div class="projeto-img">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="projeto-info">
+                            <span class="projeto-tag">Landing Page</span>
+                            <h3>FinanTech App</h3>
+                            <p>Landing page de alta conversão para lançamento de produto financeiro inovador.</p>
+                            <a href="#contato" class="btn-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Formuário de Contato -->
+        <section class="contato section dark-bg" id="contato">
+            <div class="container">
+                <div class="contato-wrapper">
+                    <div class="contato-header text-center animate-on-scroll">
+                        <span class="section-subtitle">Fale Conosco</span>
+                        <h2 class="section-title text-white">Vamos criar algo incrível para sua empresa?</h2>
+                        <p class="text-light">Preencha o formulário e nossa equipe receberá sua mensagem pelo WhatsApp.</p>
+                    </div>
+
+                    <form id="whatsappForm" class="form-contato animate-on-scroll" novalidate>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="nome">Nome completo *</label>
+                                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                                <span class="error-msg" id="erro-nome"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="empresa">Nome da empresa</label>
+                                <input type="text" id="empresa" name="empresa" placeholder="Sua empresa (opcional)">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="whatsapp">WhatsApp *</label>
+                                <input type="tel" id="whatsapp" name="whatsapp" placeholder="(27) 99999-9999" required>
+                                <span class="error-msg" id="erro-whatsapp"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" placeholder="seuemail@dominio.com">
+                                <span class="error-msg" id="erro-email"></span>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="servico">Serviço desejado *</label>
+                                <select id="servico" name="servico" required>
+                                    <option value="" disabled selected>Selecione uma opção...</option>
+                                    <option value="Site profissional">Site profissional</option>
+                                    <option value="Landing page">Landing page</option>
+                                    <option value="Loja virtual">Loja virtual</option>
+                                    <option value="Sistema personalizado">Sistema personalizado</option>
+                                    <option value="Manutenção e melhorias">Manutenção e melhorias</option>
+                                    <option value="Ainda não sei">Ainda não sei</option>
+                                </select>
+                                <span class="error-msg" id="erro-servico"></span>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="mensagem">Conte sobre seu projeto *</label>
+                                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva sucintamente suas ideias e objetivos..." required></textarea>
+                                <span class="error-msg" id="erro-mensagem"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-feedback" id="formFeedback"></div>
+
+                        <button type="submit" class="btn btn-whatsapp btn-block">
+                            <i class="fa-brands fa-whatsapp"></i> Enviar para a WRC Digital
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col brand-col">
+                <a href="#inicio" class="logo logo-footer">
+                    WRC<span>Digital</span>
+                </a>
+                <p class="slogan">“Transformamos ideias em soluções digitais.”</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul class="footer-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#beneficios">Por que WRC?</a></li>
+                    <li><a href="#como-funciona">Como Funciona</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contato Rápido</h4>
+                <p>Clique abaixo e fale direto com nossos especialistas:</p>
+                <a href="https://wa.me/5527997230221?text=Ol%C3%A1!%20Encontrei%20a%20WRC%20Digital%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os." target="_blank" class="btn btn-whatsapp-sm">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp WRC
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2026 WRC Digital. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/5527997230221?text=Ol%C3%A1!%20Encontrei%20a%20WRC%20Digital%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os." 
+       class="whatsapp-float" 
+       target="_blank" 
+       aria-label="Falar pelo WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Botão Voltar ao Topo -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
