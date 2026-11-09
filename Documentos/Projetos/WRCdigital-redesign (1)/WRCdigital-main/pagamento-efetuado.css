@@ -1,0 +1,92 @@
+/* WRC DIGITAL - página /pagina-pagamento-efetuado
+   Depende apenas das variáveis e componentes de style.css (cores, fontes, header, .btn, .n). */
+
+.pay-page{background:var(--black)}
+
+.pay{position:relative;min-height:100svh;display:grid;place-items:center;overflow:hidden;
+  padding:calc(var(--hh) + 1.5rem) 1.25rem 2rem}
+
+/* iluminação de fundo */
+.pay-glow{position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 55% 45% at 50% 38%,rgba(212,175,90,.17),transparent 70%),
+    radial-gradient(ellipse 80% 40% at 50% 110%,rgba(212,175,90,.07),transparent 70%);
+  animation:payBreathe 9s ease-in-out 2s infinite alternate}
+@keyframes payBreathe{from{opacity:.65}to{opacity:1}}
+
+/* cartão */
+.pay-card{position:relative;z-index:1;width:min(680px,100%);text-align:center;
+  padding:clamp(2.25rem,6vw,4rem) clamp(1.4rem,5vw,3.5rem);
+  background:linear-gradient(180deg,rgba(18,18,18,.78),rgba(8,8,8,.82));
+  border:1px solid var(--line-d);
+  box-shadow:0 30px 80px rgba(0,0,0,.55),inset 0 1px 0 rgba(212,175,90,.08);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  opacity:0;animation:payFade 1s var(--ease) .1s forwards}
+/* cantos dourados */
+.pay-card::before,.pay-card::after{content:"";position:absolute;width:26px;height:26px;border:1px solid var(--gold);pointer-events:none;
+  opacity:0;animation:payFade .9s var(--ease) 1.2s forwards}
+.pay-card::before{top:-1px;left:-1px;border-right:0;border-bottom:0}
+.pay-card::after{bottom:-1px;right:-1px;border-left:0;border-top:0}
+/* filete de luz que percorre a borda superior */
+.sweep{position:absolute;top:-1px;left:0;right:0;height:1px;overflow:hidden;pointer-events:none}
+.sweep::after{content:"";position:absolute;top:0;left:-40%;width:40%;height:100%;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  animation:paySweep 5.5s var(--ease) 2.2s infinite}
+@keyframes paySweep{0%{left:-40%}45%,100%{left:100%}}
+
+/* ícone de confirmação */
+.check{position:relative;width:112px;height:112px;margin:0 auto clamp(1.5rem,4vw,2.25rem)}
+.check svg{position:relative;overflow:visible;filter:drop-shadow(0 0 18px rgba(212,175,90,.35))}
+.c-bg{fill:rgba(212,175,90,.07);stroke:none;opacity:0;animation:payFade .8s var(--ease) .9s forwards}
+.c-line,.c-tick{stroke:var(--gold);stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1}
+.c-line{stroke-width:2.5;transform:rotate(-90deg);transform-origin:60px 60px;animation:payDraw 1.1s var(--ease) .25s forwards}
+.c-tick{stroke-width:5;animation:payDraw .6s var(--ease) 1s forwards}
+.ring{position:absolute;inset:0;border:1px solid var(--gold);border-radius:50%;opacity:0;
+  animation:payRing 3.6s ease-out 1.8s infinite}
+@keyframes payDraw{to{stroke-dashoffset:0}}
+@keyframes payRing{0%{transform:scale(1);opacity:.55}70%,100%{transform:scale(1.7);opacity:0}}
+
+/* textos */
+.pay-card h1{max-width:none;font-size:clamp(2.2rem,8.5vw,3.6rem);line-height:1.05}
+.pay-sub{margin-top:.9rem;font:400 clamp(1.15rem,3.6vw,1.45rem)/1.35 var(--serif);color:var(--gold);letter-spacing:-.01em}
+.pay-rule{width:min(220px,50%);height:1px;margin:clamp(1.5rem,4vw,2rem) auto;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  transform:scaleX(0);animation:payScale 1.1s var(--ease) 1.4s forwards}
+@keyframes payScale{to{transform:scaleX(1)}}
+.pay-msg{max-width:44ch;margin-inline:auto;color:var(--mute-d);font-size:clamp(1rem,2.8vw,1.1rem)}
+
+/* E agora? */
+.next{margin-top:clamp(2rem,5vw,3rem);text-align:left;max-width:30rem;margin-inline:auto}
+.next h2{font-size:clamp(1.4rem,4vw,1.8rem);text-align:center;margin-bottom:1.25rem}
+.next h2::after{content:"";display:block;width:28px;height:2px;margin:.9rem auto 0;background:var(--gold)}
+.next ol{border-top:1px solid var(--line-d)}
+.next li{display:flex;align-items:center;gap:1rem;padding:1.05rem .25rem;border-bottom:1px solid var(--line-d);
+  transition:padding-left .45s var(--ease),border-color .45s var(--ease)}
+.next li:hover{padding-left:.9rem;border-bottom-color:var(--gold)}
+/* reaproveita o marcador numérico do site, adaptado ao fundo escuro */
+.next .n{position:static;flex:none;width:2.1rem;height:2.1rem;background:transparent;border-color:var(--gold);color:var(--gold)}
+.next li p{color:#d6d6d6;font-size:1rem;line-height:1.5}
+
+.pay-back{margin-top:clamp(2rem,5vw,2.75rem)}
+
+/* rodapé */
+.pay-foot{border-top:1px solid var(--line-d);padding:1.75rem 1.25rem calc(1.75rem + env(safe-area-inset-bottom));text-align:center}
+.pay-foot p{font-size:.9rem;color:var(--mute-d);text-wrap:balance}
+
+/* entrada escalonada */
+.rv{opacity:0;transform:translateY(14px);animation:payRise .9s var(--ease) var(--d,0s) forwards}
+@keyframes payRise{to{opacity:1;transform:none}}
+@keyframes payFade{to{opacity:1}}
+
+@media (max-width:560px){
+  .pay{align-items:start;padding-top:calc(var(--hh) + 1rem)}
+  .pay-back{width:100%}
+  .check,.check svg{width:96px;height:96px}
+}
+@media (prefers-reduced-motion:reduce){
+  .pay-glow,.ring,.sweep::after{animation:none!important}
+  .ring,.sweep{display:none}
+  .pay-rule{transform:none}
+  .rv,.pay-card,.pay-card::before,.pay-card::after,.c-bg{opacity:1;transform:none}
+  .c-line,.c-tick{stroke-dashoffset:0}
+}
